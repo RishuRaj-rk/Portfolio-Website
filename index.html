@@ -1,0 +1,1352 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rishu Raj Portfolio — AI & Machine Learning Engineer</title>
+    <meta name="description" content="Portfolio of Rishu Raj — AI & Machine Learning Engineer, Python Developer, Data Analyst. Building intelligent systems with data, algorithms, and innovation." />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>" />
+    <link rel="Stylesheet" href="Assets/CSS/style.css">
+    <!-- Tailwind + Custom Styles -->
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+   
+    <!-- Font Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet" />
+
+    <!-- Lucide Icons (via CDN) -->
+    <script src="https://unpkg.com/lucide@latest">
+    </script>
+</head>
+<body>
+
+    <!-- ─── LOADER ─── -->
+    <div id="loader">
+        <div class="loader-ring"></div>
+        <div class="loader-text">
+            <span>Building Intelligence</span>
+            <span class="loader-dots"><span>.</span><span>.</span><span>.</span></span>
+        </div>
+    </div>
+
+    <!-- ─── MOBILE MENU ─── -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#home" class="nav-link active" onclick="closeMobile()">Home</a>
+        <a href="#about" class="nav-link" onclick="closeMobile()">About</a>
+        <a href="#skills" class="nav-link" onclick="closeMobile()">Skills</a>
+        <a href="#roadmap" class="nav-link" onclick="closeMobile()">Roadmap</a>
+        <a href="#workflow" class="nav-link" onclick="closeMobile()">Workflow</a>
+        <a href="#projects" class="nav-link" onclick="closeMobile()">Projects</a>
+        <a href="#github" class="nav-link" onclick="closeMobile()">GitHub</a>
+        <a href="#achievements" class="nav-link" onclick="closeMobile()">Achievements</a>
+        <a href="#certificates" class="nav-link" onclick="closeMobile()">Certificates</a>
+        <a href="#timeline" class="nav-link" onclick="closeMobile()">Timeline</a>
+        <a href="#blog" class="nav-link" onclick="closeMobile()">Blog</a>
+        <a href="#contact" class="nav-link" onclick="closeMobile()">Contact</a>
+        <div style="display:flex;gap:0.8rem;margin-top:1rem;">
+            <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">🌓</button>
+            <a href="#contact" class="btn-primary" style="padding:0.6rem 1.6rem;font-size:0.85rem;" onclick="closeMobile()">Resume</a>
+        </div>
+    </div>
+
+    <!-- ─── NAVBAR ─── -->
+    <nav class="navbar" id="navbar">
+        <a href="#home" style="text-decoration:none;display:flex;align-items:center;gap:0.5rem;">
+            <span style="font-weight:700;font-size:1.2rem;letter-spacing:-0.03em;background:linear-gradient(135deg,#4f46e5,#06b6d4);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Rishu</span>
+            <span style="font-weight:300;font-size:0.8rem;color:rgba(255,255,255,0.2);">|</span>
+            <span style="font-weight:400;font-size:0.8rem;color:rgba(255,255,255,0.3);">AI/ML</span>
+        </a>
+
+        <div class="nav-links" style="display:flex;align-items:center;gap:0.1rem;">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <!-- <a href="#roadmap" class="nav-link">Roadmap</a> -->
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#github" class="nav-link">GitHub</a>
+            <a href="#achievements" class="nav-link">Achievements</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+
+        <div style="display:flex;align-items:center;gap:0.6rem;">
+            <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">🌓</button>
+            <a href="#contact" class="btn-primary" style="padding:0.5rem 1.4rem;font-size:0.8rem;">Resume</a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" onclick="toggleMobile()" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ─── MAIN ─── -->
+    <main>
+
+        <!-- ═══ HERO ═══ -->
+        <section id="home" class="min-h-screen flex items-center relative overflow-hidden aurora" style="padding-top:5rem;">
+            <div class="container-custom w-full">
+                <div class="grid lg:grid-cols-2 gap-8 items-center">
+                    <!-- Left -->
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-2 text-sm text-indigo-400 font-medium">
+                            <span class="w-2 h-2 rounded-full bg-indigo-400 animate-pulse"></span>
+                            <span>Open to Internship Opportunities</span>
+                        </div>
+
+                        <h1 class="display-large">
+                            <span class="text-gradient-white">Rishu Raj</span>
+                        </h1>
+
+                        <div style="height:3.6rem;">
+                            <div id="typing" class="text-xl md:text-2xl font-medium text-indigo-300/80" style="font-weight:400;">
+                                <span class="text-gradient">AI & Machine Learning Student</span>
+                                <span class="cursor" style="display:inline-block;width:2px;height:1.4em;background:#4f46e5;margin-left:2px;animation:blink 0.9s step-end infinite;"></span>
+                            </div>
+                        </div>
+
+                        <p class="text-gray-400 max-w-md text-base leading-relaxed">
+                            Passionate AI & Machine Learning Engineer dedicated to building intelligent systems
+                            that solve real-world problems through data, algorithms, and continuous innovation.
+                        </p>
+
+                        <p class="text-sm font-medium text-indigo-300/60 tracking-wide">
+                            ✦ Turning Data into Intelligent Solutions ✦
+                        </p>
+
+                        <div class="flex flex-wrap gap-3 pt-2">
+                            <a href="#projects" class="btn-primary">View Projects</a>
+                            <a href="#contact" class="btn-secondary">Download Resume</a>
+                            <a href="https://github.com/RishuRaj-rk" target="_blank" class="btn-outline">GitHub</a>
+                            <a href="https://www.linkedin.com/in/rishu-raj-bb3445323" target="_blank" class="btn-outline">LinkedIn</a>
+                        </div>
+                    </div>
+
+                    <!-- Right: Illustration -->
+                    <div class="hero-illustration">
+                        <div class="orb"></div>
+                        <div class="orb"></div>
+                        <!-- <div class="profile-image">
+                        
+                        <img src="Rishu (2).png" alt="Rishu Raj"> -->
+                        <!-- <div class="hero">
+                        <img src="Rishu (2).png" alt="Profile">
+                        </div> -->
+                        <div class="orb"></div>
+                        <div class="icon-float">🧠</div>
+                        <div class="icon-float">🐍</div>
+                        <div class="icon-float">📊</div>
+                        <div class="icon-float">🤖</div>
+                        <div class="icon-float">📈</div>
+                        <div class="icon-float">⚡</div>
+                        <!-- Neural lines -->
+                        <!-- <svg style="position:absolute;inset:0;width:100%;height:100%;opacity:0.08;pointer-events:none;" viewBox="0 0 400 400">
+                            <circle cx="200" cy="200" r="120" fill="none" stroke="#4f46e5" stroke-width="1.5" stroke-dasharray="6 8"/>
+                            <circle cx="200" cy="200" r="80" fill="none" stroke="#06b6d4" stroke-width="1" stroke-dasharray="4 8"/>
+                            <circle cx="200" cy="200" r="40" fill="none" stroke="#9333ea" stroke-width="1" stroke-dasharray="3 6"/>
+                            <line x1="80" y1="80" x2="320" y2="320" stroke="#4f46e5" stroke-width="0.5" opacity="0.3"/>
+                            <line x1="320" y1="80" x2="80" y2="320" stroke="#06b6d4" stroke-width="0.5" opacity="0.3"/>
+                            <line x1="200" y1="40" x2="200" y2="360" stroke="#9333ea" stroke-width="0.5" opacity="0.2"/>
+                            <line x1="40" y1="200" x2="360" y2="200" stroke="#4f46e5" stroke-width="0.5" opacity="0.2"/>
+                        </svg> -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll indicator -->
+            <div style="position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:0.3rem;opacity:0.2;">
+                <span style="font-size:0.6rem;letter-spacing:0.1em;text-transform:uppercase;">Scroll</span>
+                <div style="width:1px;height:40px;background:linear-gradient(180deg,rgba(255,255,255,0.3),transparent);"></div>
+            </div>
+        </section>
+
+        <!-- ═══ ABOUT ═══ -->
+        <section id="about" class="section-padding">
+            <div class="container-custom">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="fade-in">
+                        <span class="text-sm font-medium text-indigo-400 tracking-widest uppercase">About</span>
+                        <h2 class="heading-lg mt-2 mb-4">Building the Future,<br />One Model at a Time</h2>
+                        <div class="space-y-4 text-gray-400 leading-relaxed">
+                            <p>
+                                I'm <strong class="text-white">Rishu Raj</strong>, an AI & Machine Learning
+                                Engineering student with a deep passion for data-driven problem solving.
+                                My journey began with Python and quickly evolved into a fascination with
+                                how algorithms can uncover patterns, predict outcomes, and transform industries.
+                            </p>
+                            <p>
+                                As a <strong class="text-white">Python Developer</strong> and
+                                <strong class="text-white">Data Analyst</strong>, I thrive on turning raw data
+                                into actionable insights. I'm constantly exploring the frontiers of
+                                machine learning, deep learning, and generative AI.
+                            </p>
+                            <p>
+                                Beyond code, I'm a <strong class="text-white">curious researcher</strong>,
+                                a <strong class="text-white">fast learner</strong>, and a firm believer that
+                                the best solutions emerge from blending analytical rigor with creative thinking.
+                            </p>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span class="skill-pill">🧠 AI/ML</span>
+                            <span class="skill-pill">🐍 Python</span>
+                            <span class="skill-pill">📊 Data Analysis</span>
+                            <span class="skill-pill">📈 Visualization</span>
+                            <span class="skill-pill">🔍 Problem Solver</span>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4 fade-in-right">
+                        <div class="card-premium text-center">
+                            <div class="text-3xl mb-2">📚</div>
+                            <div class="text-2xl font-bold text-gradient">10+</div>
+                            <div class="text-sm text-gray-400">Projects Built</div>
+                        </div>
+                        <div class="card-premium text-center">
+                            <div class="text-3xl mb-2">⚙️</div>
+                            <div class="text-2xl font-bold text-gradient">15+</div>
+                            <div class="text-sm text-gray-400">Technologies</div>
+                        </div>
+                        <div class="card-premium text-center">
+                            <div class="text-3xl mb-2">⏳</div>
+                            <div class="text-2xl font-bold text-gradient">500+</div>
+                            <div class="text-sm text-gray-400">Hours of Code</div>
+                        </div>
+                        <div class="card-premium text-center">
+                            <div class="text-3xl mb-2">🏆</div>
+                            <div class="text-2xl font-bold text-gradient">3</div>
+                            <div class="text-sm text-gray-400">Achievements</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══ SKILLS ═══ -->
+        <section id="skills" class="section-padding" style="background:rgba(255,255,255,0.01);">
+            <div class="container-custom">
+                <div class="text-center max-w-2xl mx-auto mb-12 fade-in">
+                    <span class="text-sm font-medium text-indigo-400 tracking-widest uppercase">Expertise</span>
+                    <h2 class="heading-lg mt-2">Skills & Technologies</h2>
+                    <p class="text-gray-400 mt-3">Tools and technologies I work with to build intelligent systems.</p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-6">
+                    <!-- Programming -->
+                    <div class="card-premium fade-in">
+                        <div class="text-2xl mb-3">💻</div>
+                        <h3 class="text-lg font-semibold mb-3">Programming</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-pill">Python</span>
+                            <span class="skill-pill">C++</span>
+                            <span class="skill-pill">SQL</span>
+                        </div>
+                        <div class="mt-3 w-full h-1.5 rounded-full bg-gray-800/50 overflow-hidden">
+                            <div class="h-full rounded-full bg-gradient-to-r from-indigo-500 to-cyan-400" style="width:90%;"></div>
+                        </div>
+                        <div class="text-xs text-gray-500 mt-1">Advanced</div>
+                    </div>
+
+                    <!-- Data Science -->
+                    <div class="card-premium fade-in" style="transition-delay:0.1s;">
+                        <div class="text-2xl mb-3">📊</div>
+                        <h3 class="text-lg font-semibold mb-3">Data Science</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-pill">NumPy</span>
+                            <span class="skill-pill">Pandas</span>
+                            <span class="skill-pill">Matplotlib</span>
+                            <span class="skill-pill">Seaborn</span>
+                        </div>
+                        <div class="mt-3 w-full h-1.5 rounded-full bg-gray-800/50 overflow-hidden">
+                            <div class="h-full rounded-full bg-gradient-to-r from-indigo-500 to-cyan-400" style="width:85%;"></div>
+                        </div>
+                        <div class="text-xs text-gray-500 mt-1">Proficient</div>
+                    </div>
+
+                    <!-- Machine Learning -->
+                    <div class="card-premium fade-in" style="transition-delay:0.2s;">
+                        <div class="text-2xl mb-3">🤖</div>
+                        <h3 class="text-lg font-semibold mb-3">Machine Learning</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-pill">Scikit-learn</span>
+                            <span class="skill-pill">Feature Eng.</span>
+                            <span class="skill-pill">Classification</span>
+                            <span class="skill-pill">Regression</span>
+                            <span class="skill-pill">Pipelines</span>
+                        </div>
+                        <div class="mt-3 w-full h-1.5 rounded-full bg-gray-800/50 overflow-hidden">
+                            <div class="h-full rounded-full bg-gradient-to-r from-indigo-500 to-cyan-400" style="width:70%;"></div>
+                        </div>
+                        <div class="text-xs text-gray-500 mt-1">Intermediate</div>
+                    </div>
+
+                    <!-- Visualization -->
+                    <div class="card-premium fade-in">
+                        <div class="text-2xl mb-3">📈</div>
+                        <h3 class="text-lg font-semibold mb-3">Visualization</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-pill">Power BI</span>
+                            <span class="skill-pill">Excel</span>
+                            <span class="skill-pill">Matplotlib</span>
+                        </div>
+                        <div class="mt-3 w-full h-1.5 rounded-full bg-gray-800/50 overflow-hidden">
+                            <div class="h-full rounded-full bg-gradient-to-r from-indigo-500 to-cyan-400" style="width:80%;"></div>
+                        </div>
+                        <div class="text-xs text-gray-500 mt-1">Proficient</div>
+                    </div>
+
+                    <!-- Developer Tools -->
+                    <div class="card-premium fade-in" style="transition-delay:0.1s;">
+                        <div class="text-2xl mb-3">🛠️</div>
+                        <h3 class="text-lg font-semibold mb-3">Developer Tools</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-pill">Git</span>
+                            <span class="skill-pill">GitHub</span>
+                            <span class="skill-pill">VS Code</span>
+                            <span class="skill-pill">Jupyter</span>
+                        </div>
+                        <div class="mt-3 w-full h-1.5 rounded-full bg-gray-800/50 overflow-hidden">
+                            <div class="h-full rounded-full bg-gradient-to-r from-indigo-500 to-cyan-400" style="width:85%;"></div>
+                        </div>
+                        <div class="text-xs text-gray-500 mt-1">Proficient</div>
+                    </div>
+
+                    <!-- Soft Skills -->
+                    <div class="card-premium fade-in" style="transition-delay:0.2s;">
+                        <div class="text-2xl mb-3">🧘</div>
+                        <h3 class="text-lg font-semibold mb-3">Soft Skills</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-pill">Problem Solving</span>
+                            <span class="skill-pill">Critical Thinking</span>
+                            <span class="skill-pill">Communication</span>
+                            <span class="skill-pill">Adaptability</span>
+                            <span class="skill-pill">Teamwork</span>
+                        </div>
+                        <div class="mt-3 w-full h-1.5 rounded-full bg-gray-800/50 overflow-hidden">
+                            <div class="h-full rounded-full bg-gradient-to-r from-indigo-500 to-cyan-400" style="width:90%;"></div>
+                        </div>
+                        <div class="text-xs text-gray-500 mt-1">Strong</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══ LEARNING ROADMAP ═══ -->
+        <!-- <section id="roadmap" class="section-padding">
+            <div class="container-custom">
+                <div class="text-center max-w-2xl mx-auto mb-12 fade-in">
+                    <span class="text-sm font-medium text-indigo-400 tracking-widest uppercase">Path</span>
+                    <h2 class="heading-lg mt-2">Learning Roadmap</h2>
+                    <p class="text-gray-400 mt-3">My journey from Python to AI Engineering — every milestone matters.</p>
+                </div> -->
+
+                <!-- <div class="max-w-2xl mx-auto relative"> -->
+                    <!-- Vertical line -->
+                    <!-- <div class="absolute left-6 top-0 bottom-0 w-0.5 bg-gradient-to-b from-indigo-500/30 via-cyan-400/20 to-purple-500/10" style="left:20px;"></div>
+
+                    <div class="space-y-0">
+                        <div class="roadmap-item flex gap-4 items-start py-3 fade-in-left">
+                            <div class="timeline-dot mt-1" style="width:12px;height:12px;flex-shrink:0;"></div>
+                            <div><span class="font-medium">Python</span> <span class="text-xs text-gray-500 ml-2">Foundation</span></div>
+                        </div>
+                        <div class="roadmap-item flex gap-4 items-start py-3 fade-in-left" style="transition-delay:0.05s;">
+                            <div class="timeline-dot mt-1" style="width:12px;height:12px;flex-shrink:0;"></div>
+                            <div><span class="font-medium">NumPy</span> <span class="text-xs text-gray-500 ml-2">Numerical Computing</span></div>
+                        </div>
+                        <div class="roadmap-item flex gap-4 items-start py-3 fade-in-left" style="transition-delay:0.1s;">
+                            <div class="timeline-dot mt-1" style="width:12px;height:12px;flex-shrink:0;"></div>
+                            <div><span class="font-medium">Pandas</span> <span class="text-xs text-gray-500 ml-2">Data Manipulation</span></div>
+                        </div>
+                        <div class="roadmap-item flex gap-4 items-start py-3 fade-in-left" style="transition-delay:0.15s;">
+                            <div class="timeline-dot mt-1" style="width:12px;height:12px;flex-shrink:0;"></div>
+                            <div><span class="font-medium">Data Cleaning & EDA</span> <span class="text-xs text-gray-500 ml-2">Data Prep</span></div>
+                        </div>
+                        <div class="roadmap-item flex gap-4 items-start py-3 fade-in-left" style="transition-delay:0.2s;">
+                            <div class="timeline-dot mt-1" style="width:12px;height:12px;flex-shrink:0;"></div>
+                            <div><span class="font-medium">Statistics</span> <span class="text-xs text-gray-500 ml-2">Foundational Math</span></div>
+                        </div>
+                        <div class="roadmap-item flex gap-4 items-start py-3 fade-in-left" style="transition-delay:0.25s;">
+                            <div class="timeline-dot mt-1" style="width:12px;height:12px;flex-shrink:0;background:linear-gradient(135deg,#06b6d4,#9333ea);"></div>
+                            <div><span class="font-medium text-cyan-300">Machine Learning</span> <span class="text-xs text-gray-500 ml-2">Scikit-learn</span></div>
+                        </div>
+                        <div class="roadmap-item flex gap-4 items-start py-3 fade-in-left" style="transition-delay:0.3s;">
+                            <div class="timeline-dot mt-1" style="width:12px;height:12px;flex-shrink:0;background:linear-gradient(135deg,#06b6d4,#9333ea);"></div>
+                            <div><span class="font-medium text-cyan-300">Model Evaluation</span> <span class="text-xs text-gray-500 ml-2">Validation</span></div>
+                        </div>
+                        <div class="roadmap-item flex gap-4 items-start py-3 fade-in-left" style="transition-delay:0.35s;">
+                            <div class="timeline-dot mt-1" style="width:12px;height:12px;flex-shrink:0;background:linear-gradient(135deg,#06b6d4,#9333ea);"></div>
+                            <div><span class="font-medium text-cyan-300">Recommendation Systems</span> <span class="text-xs text-gray-500 ml-2">Projects</span></div>
+                        </div>
+                        <div class="roadmap-item flex gap-4 items-start py-3 fade-in-left" style="transition-delay:0.4s;">
+                            <div class="timeline-dot mt-1" style="width:16px;height:16px;flex-shrink:0;background:linear-gradient(135deg,#9333ea,#4f46e5);box-shadow:0 0 30px rgba(147,51,234,0.4);"></div>
+                            <div><span class="font-medium text-purple-300 text-lg">Deep Learning</span> <span class="text-xs text-gray-500 ml-2">🎯 Current Goal</span></div>
+                        </div>
+                        <div class="roadmap-item flex gap-4 items-start py-3 fade-in-left" style="transition-delay:0.45s;opacity:0.4;">
+                            <div class="timeline-dot mt-1" style="width:12px;height:12px;flex-shrink:0;background:rgba(255,255,255,0.1);"></div>
+                            <div><span class="font-medium text-gray-500">Generative AI</span> <span class="text-xs text-gray-500 ml-2">Future</span></div>
+                        </div>
+                        <div class="roadmap-item flex gap-4 items-start py-3 fade-in-left" style="transition-delay:0.5s;opacity:0.4;">
+                            <div class="timeline-dot mt-1" style="width:12px;height:12px;flex-shrink:0;background:rgba(255,255,255,0.1);"></div>
+                            <div><span class="font-medium text-gray-500">LLMs & LangChain</span> <span class="text-xs text-gray-500 ml-2">Future</span></div>
+                        </div>
+                        <div class="roadmap-item flex gap-4 items-start py-3 fade-in-left" style="transition-delay:0.55s;opacity:0.4;">
+                            <div class="timeline-dot mt-1" style="width:12px;height:12px;flex-shrink:0;background:rgba(255,255,255,0.1);"></div>
+                            <div><span class="font-medium text-gray-500">MLOps & Docker</span> <span class="text-xs text-gray-500 ml-2">Future</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- ═══ AI WORKFLOW ═══ -->
+        <section id="workflow" class="section-padding" style="background:rgba(255,255,255,0.01);">
+            <div class="container-custom">
+                <div class="text-center max-w-2xl mx-auto mb-12 fade-in">
+                    <span class="text-sm font-medium text-indigo-400 tracking-widest uppercase">Process</span>
+                    <h2 class="heading-lg mt-2">AI Workflow</h2>
+                    <p class="text-gray-400 mt-3">End-to-end pipeline for building intelligent systems.</p>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-4xl mx-auto">
+                    <div class="workflow-step visible"><span class="step-num">1</span><span class="step-label">Dataset</span></div>
+                    <div class="workflow-step"><span class="step-num">2</span><span class="step-label">Data Cleaning</span></div>
+                    <div class="workflow-step"><span class="step-num">3</span><span class="step-label">EDA</span></div>
+                    <div class="workflow-step"><span class="step-num">4</span><span class="step-label">Feature Eng.</span></div>
+                    <div class="workflow-step"><span class="step-num">5</span><span class="step-label">Model Training</span></div>
+                    <div class="workflow-step"><span class="step-num">6</span><span class="step-label">Model Eval.</span></div>
+                    <div class="workflow-step"><span class="step-num">7</span><span class="step-label">Prediction</span></div>
+                    <div class="workflow-step"><span class="step-num">8</span><span class="step-label">Deployment</span></div>
+                </div>
+
+                <div class="text-center mt-8 text-sm text-gray-500">
+                    <span class="inline-block px-4 py-1.5 rounded-full bg-indigo-500/5 border border-indigo-500/10">
+                        ⚡ Each stage is animated and optimized for production
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══ PROJECTS ═══ -->
+        <section id="projects" class="section-padding">
+            <div class="container-custom">
+                <div class="text-center max-w-2xl mx-auto mb-10 fade-in">
+                    <span class="text-sm font-medium text-indigo-400 tracking-widest uppercase">Portfolio</span>
+                    <h2 class="heading-lg mt-2">Projects</h2>
+                    <p class="text-gray-400 mt-3">Real-world problems solved with data & machine learning.</p>
+                </div>
+
+                <!-- Filters -->
+                <div class="flex flex-wrap justify-center gap-2 mb-10 fade-in">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="ml">Machine Learning</button>
+                    <button class="filter-btn" data-filter="analysis">Data Analysis</button>
+                    <button class="filter-btn" data-filter="dashboard">Dashboard</button>
+                    <button class="filter-btn" data-filter="python">Python</button>
+                </div>
+
+                <!-- Project Grid -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="projectGrid">
+                    <!-- Project 1 -->
+                    <div class="card-premium project-card" data-category="ml" onclick="openModal('project1')">
+                        <div class="text-3xl mb-3">🤖</div>
+                        <h3 class="text-lg font-semibold">House Price Predictor</h3>
+                        <p class="text-sm text-gray-400 mt-1">Regression model using Scikit-learn</p>
+                        <div class="flex flex-wrap gap-1.5 mt-3">
+                            <span class="skill-pill" style="font-size:0.65rem;">Scikit-learn</span>
+                            <span class="skill-pill" style="font-size:0.65rem;">Pandas</span>
+                            <span class="skill-pill" style="font-size:0.65rem;">Regression</span>
+                        </div>
+                        <div class="mt-3 flex items-center gap-3 text-xs text-gray-500">
+                            <span>📊 80% accuracy</span>
+                            <span>📁 Kaggle</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="card-premium project-card" data-category="analysis" onclick="openModal('project2')">
+                        <div class="text-3xl mb-3">📈</div>
+                        <h3 class="text-lg font-semibold">COVID-19 Data Analysis</h3>
+                        <p class="text-sm text-gray-400 mt-1">Exploratory analysis & visualization</p>
+                        <div class="flex flex-wrap gap-1.5 mt-3">
+                            <span class="skill-pill" style="font-size:0.65rem;">Pandas</span>
+                            <span class="skill-pill" style="font-size:0.65rem;">Matplotlib</span>
+                            <span class="skill-pill" style="font-size:0.65rem;">Seaborn</span>
+                        </div>
+                        <div class="mt-3 flex items-center gap-3 text-xs text-gray-500">
+                            <span>📊 15+ visualizations</span>
+                            <span>📁 Public data</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="card-premium project-card" data-category="dashboard" onclick="openModal('project3')">
+                        <div class="text-3xl mb-3">📊</div>
+                        <h3 class="text-lg font-semibold">Sales Dashboard</h3>
+                        <p class="text-sm text-gray-400 mt-1">Interactive Power BI dashboard</p>
+                        <div class="flex flex-wrap gap-1.5 mt-3">
+                            <span class="skill-pill" style="font-size:0.65rem;">Power BI</span>
+                            <span class="skill-pill" style="font-size:0.65rem;">Excel</span>
+                            <span class="skill-pill" style="font-size:0.65rem;">DAX</span>
+                        </div>
+                        <div class="mt-3 flex items-center gap-3 text-xs text-gray-500">
+                            <span>📊 KPI tracking</span>
+                            <span>📁 Retail data</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="card-premium project-card" data-category="ml" onclick="openModal('project4')">
+                        <div class="text-3xl mb-3">🧠</div>
+                        <h3 class="text-lg font-semibold">Titanic Survival Predictor</h3>
+                        <p class="text-sm text-gray-400 mt-1">Classification with feature engineering</p>
+                        <div class="flex flex-wrap gap-1.5 mt-3">
+                            <span class="skill-pill" style="font-size:0.65rem;">Scikit-learn</span>
+                            <span class="skill-pill" style="font-size:0.65rem;">Feature Eng.</span>
+                            <span class="skill-pill" style="font-size:0.65rem;">Classification</span>
+                        </div>
+                        <div class="mt-3 flex items-center gap-3 text-xs text-gray-500">
+                            <span>📊 78% accuracy</span>
+                            <span>📁 Kaggle</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 5 -->
+                    <div class="card-premium project-card" data-category="analysis" onclick="openModal('project5')">
+                        <div class="text-3xl mb-3">🌍</div>
+                        <h3 class="text-lg font-semibold">Global Climate Analysis</h3>
+                        <p class="text-sm text-gray-400 mt-1">Temperature trends & anomaly detection</p>
+                        <div class="flex flex-wrap gap-1.5 mt-3">
+                            <span class="skill-pill" style="font-size:0.65rem;">NumPy</span>
+                            <span class="skill-pill" style="font-size:0.65rem;">Pandas</span>
+                            <span class="skill-pill" style="font-size:0.65rem;">Visualization</span>
+                        </div>
+                        <div class="mt-3 flex items-center gap-3 text-xs text-gray-500">
+                            <span>📊 100+ years data</span>
+                            <span>📁 NOAA</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 6 -->
+                    <div class="card-premium project-card" data-category="python" onclick="openModal('project6')">
+                        <div class="text-3xl mb-3">⚡</div>
+                        <h3 class="text-lg font-semibold">Automated ETL Pipeline</h3>
+                        <p class="text-sm text-gray-400 mt-1">Python automation for data processing</p>
+                        <div class="flex flex-wrap gap-1.5 mt-3">
+                            <span class="skill-pill" style="font-size:0.65rem;">Python</span>
+                            <span class="skill-pill" style="font-size:0.65rem;">Pandas</span>
+                            <span class="skill-pill" style="font-size:0.65rem;">Automation</span>
+                        </div>
+                        <div class="mt-3 flex items-center gap-3 text-xs text-gray-500">
+                            <span>⚡ 10x faster</span>
+                            <span>📁 Custom</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══ GITHUB ═══ -->
+        <section id="github" class="section-padding" style="background:rgba(255,255,255,0.01);">
+            <div class="container-custom">
+                <div class="text-center max-w-2xl mx-auto mb-10 fade-in">
+                    <span class="text-sm font-medium text-indigo-400 tracking-widest uppercase">Code</span>
+                    <h2 class="heading-lg mt-2">GitHub</h2>
+                    <p class="text-gray-400 mt-3">Open source contributions and project activity.</p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="card-premium fade-in">
+                        <div class="flex items-center gap-2 text-2xl">📦</div>
+                        <div class="text-2xl font-bold text-gradient mt-1" id="ghRepos">3</div>
+                        <div class="text-sm text-gray-400">Public Repositories</div>
+                    </div>
+                    <div class="card-premium fade-in" style="transition-delay:0.1s;">
+                        <div class="flex items-center gap-2 text-2xl">⭐</div>
+                        <div class="text-2xl font-bold text-gradient mt-1" id="ghStars">1</div>
+                        <div class="text-sm text-gray-400">Stars Received</div>
+                    </div>
+                    <div class="card-premium fade-in" style="transition-delay:0.2s;">
+                        <div class="flex items-center gap-2 text-2xl">🔥</div>
+                        <div class="text-2xl font-bold text-gradient mt-1" id="ghStreak">2</div>
+                        <div class="text-sm text-gray-400">Day Contribution Streak</div>
+                    </div>
+                </div>
+
+                <!-- Contribution Calendar -->
+                <div class="card-premium mt-6 fade-in">
+                    <h4 class="text-sm font-medium text-gray-400 mb-4">Contribution Calendar</h4>
+                    <div class="gh-calendar" id="ghCalendar">
+                        <!-- Filled by JS -->
+                    </div>
+                    <div class="flex justify-between text-xs text-gray-500 mt-3">
+                        <span>Less</span>
+                        <div class="flex gap-1">
+                            <span class="w-3 h-3 rounded bg-gray-800/30"></span>
+                            <span class="w-3 h-3 rounded bg-indigo-500/20"></span>
+                            <span class="w-3 h-3 rounded bg-indigo-500/40"></span>
+                            <span class="w-3 h-3 rounded bg-indigo-500/60"></span>
+                            <span class="w-3 h-3 rounded bg-indigo-500/80"></span>
+                        </div>
+                        <span>More</span>
+                    </div>
+                </div>
+
+                <div class="text-center mt-6">
+                    <a href="https://github.com/RishuRaj-rk" target="_blank" class="btn-secondary">
+                        <span>View GitHub Profile</span> →
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══ ACHIEVEMENTS ═══ -->
+        <section id="achievements" class="section-padding">
+            <div class="container-custom">
+                <div class="text-center max-w-2xl mx-auto mb-10 fade-in">
+                    <span class="text-sm font-medium text-indigo-400 tracking-widest uppercase">Milestones</span>
+                    <h2 class="heading-lg mt-2">Achievements</h2>
+                    <p class="text-gray-400 mt-3">Recognitions and milestones along the journey.</p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="card-premium text-center fade-in">
+                        <div class="text-4xl mb-3">🏆</div>
+                        <h3 class="text-lg font-semibold">Hackathon Winner</h3>
+                        <p class="text-sm text-gray-400 mt-1">First place in college hackathon</p>
+                        <div class="mt-3 inline-flex items-center gap-1 text-xs text-indigo-400 bg-indigo-500/10 px-3 py-1 rounded-full">
+                            🏅 2024
+                        </div>
+                    </div>
+                    <div class="card-premium text-center fade-in" style="transition-delay:0.1s;">
+                        <div class="text-4xl mb-3">🎭</div>
+                        <h3 class="text-lg font-semibold">Dumb Charades Winner</h3>
+                        <p class="text-sm text-gray-400 mt-1">College cultural fest champion</p>
+                        <div class="mt-3 inline-flex items-center gap-1 text-xs text-indigo-400 bg-indigo-500/10 px-3 py-1 rounded-full">
+                            🎯 2023
+                        </div>
+                    </div>
+                    <div class="card-premium text-center fade-in" style="transition-delay:0.2s;">
+                        <div class="text-4xl mb-3">⚡</div>
+                        <h3 class="text-lg font-semibold">Skill & Thrill Runner-up</h3>
+                        <p class="text-sm text-gray-400 mt-1">2nd place in technical competition</p>
+                        <div class="mt-3 inline-flex items-center gap-1 text-xs text-indigo-400 bg-indigo-500/10 px-3 py-1 rounded-full">
+                            🥈 2024
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══ CERTIFICATES ═══ -->
+        <section id="certificates" class="section-padding" style="background:rgba(255,255,255,0.01);">
+            <div class="container-custom">
+                <div class="text-center max-w-2xl mx-auto mb-10 fade-in">
+                    <span class="text-sm font-medium text-indigo-400 tracking-widest uppercase">Credentials</span>
+                    <h2 class="heading-lg mt-2">Certificates</h2>
+                    <p class="text-gray-400 mt-3">Verified learning achievements.</p>
+                </div>
+
+                <div class="cert-grid">
+                    <div class="cert-item fade-in">
+                        <div class="cert-icon">📜</div>
+                        <div class="cert-name">Python for Data Science</div>
+                        <span class="text-xs text-gray-500 mt-1">NPTEL</span>
+                    </div>
+                    <div class="cert-item fade-in" style="transition-delay:0.05s;">
+                        <div class="cert-icon">📜</div>
+                        <div class="cert-name">Machine Learning</div>
+                        <span class="text-xs text-gray-500 mt-1">Stanford Online</span>
+                    </div>
+                    <div class="cert-item fade-in" style="transition-delay:0.1s;">
+                        <div class="cert-icon">📜</div>
+                        <div class="cert-name">Data Analysis with Pandas</div>
+                        <span class="text-xs text-gray-500 mt-1">Kaggle</span>
+                    </div>
+                    <div class="cert-item fade-in" style="transition-delay:0.15s;">
+                        <div class="cert-icon">📜</div>
+                        <div class="cert-name">SQL for Data Science</div>
+                        <span class="text-xs text-gray-500 mt-1">Coursera</span>
+                    </div>
+                    <div class="cert-item fade-in" style="transition-delay:0.2s;">
+                        <div class="cert-icon">📜</div>
+                        <div class="cert-name">Power BI Data Analyst</div>
+                        <span class="text-xs text-gray-500 mt-1">Microsoft</span>
+                    </div>
+                    <div class="cert-item fade-in" style="transition-delay:0.25s;">
+                        <div class="cert-icon">📜</div>
+                        <div class="cert-name">Scikit-learn in Practice</div>
+                        <span class="text-xs text-gray-500 mt-1">DataCamp</span>
+                    </div>
+                    <div class="cert-item fade-in" style="transition-delay:0.3s;">
+                        <div class="cert-icon">📜</div>
+                        <div class="cert-name">Git & GitHub</div>
+                        <span class="text-xs text-gray-500 mt-1">Udemy</span>
+                    </div>
+                    <div class="cert-item fade-in" style="transition-delay:0.35s;">
+                        <div class="cert-icon">📜</div>
+                        <div class="cert-name">Deep Learning Specialization</div>
+                        <span class="text-xs text-gray-500 mt-1">Coursera (In Progress)</span>
+                    </div>
+                </div>
+
+                <div class="text-center mt-8">
+                    <button class="btn-outline" onclick="alert('Certificate gallery coming soon!')">View All Certificates →</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══ TIMELINE ═══ -->
+        <section id="timeline" class="section-padding">
+            <div class="container-custom">
+                <div class="text-center max-w-2xl mx-auto mb-10 fade-in">
+                    <span class="text-sm font-medium text-indigo-400 tracking-widest uppercase">Journey</span>
+                    <h2 class="heading-lg mt-2">My Story</h2>
+                    <p class="text-gray-400 mt-3">From first line of code to AI engineering.</p>
+                </div>
+
+                <div class="max-w-2xl mx-auto relative">
+                    <div class="absolute left-6 top-0 bottom-0 w-0.5 bg-gradient-to-b from-indigo-500/40 via-cyan-400/20 to-purple-500/10" style="left:20px;"></div>
+
+                    <div class="space-y-0">
+                        <div class="flex gap-4 items-start py-3 fade-in-left"><div class="timeline-dot mt-1" style="width:12px;height:12px;"></div><div><span class="font-medium">Started Programming</span><div class="text-xs text-gray-500">2022 — Python basics</div></div></div>
+                        <div class="flex gap-4 items-start py-3 fade-in-left" style="transition-delay:0.05s;"><div class="timeline-dot mt-1" style="width:12px;height:12px;"></div><div><span class="font-medium">Python Mastery</span><div class="text-xs text-gray-500">2023 — Core & libraries</div></div></div>
+                        <div class="flex gap-4 items-start py-3 fade-in-left" style="transition-delay:0.1s;"><div class="timeline-dot mt-1" style="width:12px;height:12px;"></div><div><span class="font-medium">NumPy & Pandas</span><div class="text-xs text-gray-500">2023 — Data manipulation</div></div></div>
+                        <div class="flex gap-4 items-start py-3 fade-in-left" style="transition-delay:0.15s;"><div class="timeline-dot mt-1" style="width:12px;height:12px;"></div><div><span class="font-medium">EDA & Visualization</span><div class="text-xs text-gray-500">2024 — Exploratory analysis</div></div></div>
+                        <div class="flex gap-4 items-start py-3 fade-in-left" style="transition-delay:0.2s;"><div class="timeline-dot mt-1" style="width:12px;height:12px;background:linear-gradient(135deg,#06b6d4,#9333ea);"></div><div><span class="font-medium text-cyan-300">Machine Learning</span><div class="text-xs text-gray-500">2024 — Scikit-learn, models</div></div></div>
+                        <div class="flex gap-4 items-start py-3 fade-in-left" style="transition-delay:0.25s;"><div class="timeline-dot mt-1" style="width:12px;height:12px;background:linear-gradient(135deg,#06b6d4,#9333ea);"></div><div><span class="font-medium text-cyan-300">Projects</span><div class="text-xs text-gray-500">2024 — Real-world applications</div></div></div>
+                        <div class="flex gap-4 items-start py-3 fade-in-left" style="transition-delay:0.3s;"><div class="timeline-dot mt-1" style="width:16px;height:16px;background:linear-gradient(135deg,#9333ea,#4f46e5);box-shadow:0 0 30px rgba(147,51,234,0.4);"></div><div><span class="font-medium text-purple-300 text-lg">Deep Learning</span><div class="text-xs text-gray-500">🎯 2025 — Current focus</div></div></div>
+                        <div class="flex gap-4 items-start py-3 fade-in-left" style="transition-delay:0.35s;opacity:0.4;"><div class="timeline-dot mt-1" style="width:12px;height:12px;background:rgba(255,255,255,0.1);"></div><div><span class="font-medium text-gray-500">AI Engineer</span><div class="text-xs text-gray-500">🚀 Future goal</div></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══ EXPERIENCE / OPEN TO INTERNSHIP ═══ -->
+        <section class="section-padding" style="padding:3rem 0;background:rgba(79,70,229,0.02);border-top:1px solid rgba(79,70,229,0.04);border-bottom:1px solid rgba(79,70,229,0.04);">
+            <div class="container-custom text-center">
+                <div class="inline-block px-8 py-4 rounded-2xl bg-gradient-to-r from-indigo-500/10 to-cyan-400/10 border border-indigo-500/20 backdrop-blur-sm">
+                    <div class="text-sm font-medium text-indigo-300 tracking-widest uppercase">Now</div>
+                    <h3 class="text-2xl md:text-3xl font-bold text-gradient mt-1">🚀 Open to Internship Opportunities</h3>
+                    <p class="text-gray-400 mt-2 max-w-md mx-auto">Looking for a role where I can apply AI/ML skills, learn from experts, and build impactful solutions.</p>
+                    <a href="#contact" class="btn-primary mt-4" style="padding:0.6rem 2rem;font-size:0.9rem;">Let's Connect</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══ WHAT I CAN DO ═══ -->
+        <section id="services" class="section-padding">
+            <div class="container-custom">
+                <div class="text-center max-w-2xl mx-auto mb-10 fade-in">
+                    <span class="text-sm font-medium text-indigo-400 tracking-widest uppercase">Services</span>
+                    <h2 class="heading-lg mt-2">What I Can Do</h2>
+                    <p class="text-gray-400 mt-3">Core competencies and areas of expertise.</p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-5">
+                    <div class="card-premium text-center fade-in">
+                        <div class="text-3xl mb-3">🧠</div>
+                        <h3 class="font-semibold">Machine Learning Models</h3>
+                        <p class="text-sm text-gray-400 mt-1">Build, train, and evaluate ML models for classification and regression.</p>
+                    </div>
+                    <div class="card-premium text-center fade-in" style="transition-delay:0.1s;">
+                        <div class="text-3xl mb-3">🧹</div>
+                        <h3 class="font-semibold">Data Cleaning</h3>
+                        <p class="text-sm text-gray-400 mt-1">Preprocess raw data, handle missing values, and prepare for analysis.</p>
+                    </div>
+                    <div class="card-premium text-center fade-in" style="transition-delay:0.2s;">
+                        <div class="text-3xl mb-3">🔍</div>
+                        <h3 class="font-semibold">Data Analysis</h3>
+                        <p class="text-sm text-gray-400 mt-1">Exploratory analysis, statistical insights, and pattern discovery.</p>
+                    </div>
+                    <div class="card-premium text-center fade-in">
+                        <div class="text-3xl mb-3">📊</div>
+                        <h3 class="font-semibold">Dashboard Development</h3>
+                        <p class="text-sm text-gray-400 mt-1">Interactive dashboards with Power BI and visualization tools.</p>
+                    </div>
+                    <div class="card-premium text-center fade-in" style="transition-delay:0.1s;">
+                        <div class="text-3xl mb-3">📈</div>
+                        <h3 class="font-semibold">Data Visualization</h3>
+                        <p class="text-sm text-gray-400 mt-1">Clear, compelling visual stories from complex data.</p>
+                    </div>
+                    <div class="card-premium text-center fade-in" style="transition-delay:0.2s;">
+                        <div class="text-3xl mb-3">⚡</div>
+                        <h3 class="font-semibold">Python Automation</h3>
+                        <p class="text-sm text-gray-400 mt-1">Automate repetitive tasks and build efficient data pipelines.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══ STATISTICS ═══ -->
+        <section id="stats" class="section-padding" style="background:rgba(255,255,255,0.01);">
+            <div class="container-custom">
+                <div class="grid grid-cols-2 md:grid-cols-5 gap-4 text-center">
+                    <div class="fade-in">
+                        <div class="counter-number" data-target="12">0</div>
+                        <div class="text-sm text-gray-400">Projects</div>
+                    </div>
+                    <div class="fade-in" style="transition-delay:0.1s;">
+                        <div class="counter-number" data-target="18">0</div>
+                        <div class="text-sm text-gray-400">Technologies</div>
+                    </div>
+                    <div class="fade-in" style="transition-delay:0.2s;">
+                        <div class="counter-number" data-target="520">0</div>
+                        <div class="text-sm text-gray-400">Hours of Code</div>
+                    </div>
+                    <div class="fade-in" style="transition-delay:0.3s;">
+                        <div class="counter-number" data-target="142">0</div>
+                        <div class="text-sm text-gray-400">Contributions</div>
+                    </div>
+                    <div class="fade-in" style="transition-delay:0.4s;">
+                        <div class="counter-number" data-target="3">0</div>
+                        <div class="text-sm text-gray-400">Years Learning</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══ BLOG ═══ -->
+        <section id="blog" class="section-padding">
+            <div class="container-custom">
+                <div class="text-center max-w-2xl mx-auto mb-10 fade-in">
+                    <span class="text-sm font-medium text-indigo-400 tracking-widest uppercase">Insights</span>
+                    <h2 class="heading-lg mt-2">Blog</h2>
+                    <p class="text-gray-400 mt-3">Sharing knowledge on AI, data science, and machine learning.</p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="blog-card card-premium fade-in">
+                        <div class="blog-image">📊</div>
+                        <div class="flex items-center gap-2 text-xs text-gray-500"><span>📅 Jan 2025</span><span>•</span><span>5 min read</span></div>
+                        <h4 class="font-semibold mt-1">EDA: The First Step to Great Models</h4>
+                        <p class="text-sm text-gray-400 mt-1">Why exploratory data analysis is the foundation of any ML project.</p>
+                        <div class="mt-2"><span class="skill-pill" style="font-size:0.6rem;">EDA</span><span class="skill-pill" style="font-size:0.6rem;margin-left:4px;">Data Science</span></div>
+                    </div>
+                    <div class="blog-card card-premium fade-in" style="transition-delay:0.1s;">
+                        <div class="blog-image">🧠</div>
+                        <div class="flex items-center gap-2 text-xs text-gray-500"><span>📅 Dec 2024</span><span>•</span><span>7 min read</span></div>
+                        <h4 class="font-semibold mt-1">Feature Engineering for Better Predictions</h4>
+                        <p class="text-sm text-gray-400 mt-1">How to create features that make your models shine.</p>
+                        <div class="mt-2"><span class="skill-pill" style="font-size:0.6rem;">Feature Eng.</span><span class="skill-pill" style="font-size:0.6rem;margin-left:4px;">ML</span></div>
+                    </div>
+                    <div class="blog-card card-premium fade-in" style="transition-delay:0.2s;">
+                        <div class="blog-image">📈</div>
+                        <div class="flex items-center gap-2 text-xs text-gray-500"><span>📅 Nov 2024</span><span>•</span><span>4 min read</span></div>
+                        <h4 class="font-semibold mt-1">Statistics Every Data Scientist Should Know</h4>
+                        <p class="text-sm text-gray-400 mt-1">Essential statistical concepts for data-driven decision making.</p>
+                        <div class="mt-2"><span class="skill-pill" style="font-size:0.6rem;">Statistics</span><span class="skill-pill" style="font-size:0.6rem;margin-left:4px;">Probability</span></div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-8">
+                    <button class="btn-outline" onclick="alert('More blog posts coming soon!')">View All Posts →</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══ CONTACT ═══ -->
+        <section id="contact" class="section-padding" style="background:rgba(255,255,255,0.01);">
+            <div class="container-custom">
+                <div class="text-center max-w-2xl mx-auto mb-10 fade-in">
+                    <span class="text-sm font-medium text-indigo-400 tracking-widest uppercase">Connect</span>
+                    <h2 class="heading-lg mt-2">Get in Touch</h2>
+                    <p class="text-gray-400 mt-3">Have a question, collaboration idea, or internship opportunity? Reach out.</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-10 max-w-4xl mx-auto">
+                    <!-- Form -->
+                    <div class="fade-in">
+                        <form id="contactForm" onsubmit="handleContact(event)">
+                            <div class="mb-4">
+                                <label class="form-label">Your Name</label>
+                                <input type="text" class="form-input" placeholder="John Doe" required />
+                            </div>
+                            <div class="mb-4">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-input" placeholder="john@example.com" required />
+                            </div>
+                            <div class="mb-4">
+                                <label class="form-label">Subject</label>
+                                <input type="text" class="form-input" placeholder="Internship inquiry" />
+                            </div>
+                            <div class="mb-4">
+                                <label class="form-label">Message</label>
+                                <textarea rows="4" class="form-input" placeholder="Tell me about your opportunity..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary w-full justify-center">
+                                Send Message →
+                            </button>
+                            <p class="text-xs text-gray-500 mt-2 text-center">I'll respond within 24 hours.</p>
+                        </form>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="space-y-6 fade-in-right">
+                        <div class="card-premium">
+                            <div class="flex items-center gap-3">
+                                <span class="text-2xl">📧</span>
+                                <div>
+                                    <div class="text-sm text-gray-400">Email</div>
+                                    <a href="mailto:rishuraj@example.com" class="text-indigo-300 hover:text-indigo-200 transition">rishuraj@example.com</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-premium">
+                            <div class="flex items-center gap-3">
+                                <span class="text-2xl">🐙</span>
+                                <div>
+                                    <div class="text-sm text-gray-400">GitHub</div>
+                                    <a href="https://github.com/RishuRaj-rk" target="_blank" class="text-indigo-300 hover:text-indigo-200 transition">github.com/RishuRaj-rk</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-premium">
+                            <div class="flex items-center gap-3">
+                                <span class="text-2xl">🔗</span>
+                                <div>
+                                    <div class="text-sm text-gray-400">LinkedIn</div>
+                                    <a href="https://www.linkedin.com/in/rishu-raj-bb3445323" target="_blank" class="text-indigo-300 hover:text-indigo-200 transition">linkedin.com/in/rishu-raj</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-premium">
+                            <div class="flex items-center gap-3">
+                                <span class="text-2xl">📷</span>
+                                <div>
+                                    <div class="text-sm text-gray-400">Instagram</div>
+                                    <a href="#" class="text-indigo-300 hover:text-indigo-200 transition">@rishu_ai</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-3 pt-2">
+                            <a href="https://github.com/RishuRaj-rk" target="_blank" class="btn-outline">GitHub</a>
+                            <a href="https://www.linkedin.com/in/rishu-raj-bb3445323" target="_blank" class="btn-outline">LinkedIn</a>
+                            <a href="#contact" class="btn-primary" style="padding:0.6rem 1.6rem;font-size:0.85rem;">Resume</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ─── FOOTER ─── -->
+    <footer style="padding:2rem 0;border-top:1px solid rgba(255,255,255,0.04);">
+        <div class="container-custom flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-2 text-sm text-gray-500">
+                <span>🧠</span>
+                <span>Rishu Raj — AI & ML Engineer</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs text-gray-500">
+                <span>© 2026</span>
+                <span>•</span>
+                <span>Built with ❤️ & Python</span>
+                <span>•</span>
+                <a href="#home" class="hover:text-white transition">↑ Back to top</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ─── SCROLL TO TOP ─── -->
+    <button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Scroll to top">
+        ↑
+    </button>
+
+    <!-- ─── PROJECT MODAL ─── -->
+    <div class="modal-overlay" id="projectModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">✕</button>
+            <div id="modalBody">
+                <h2 class="text-2xl font-bold mb-2" id="modalTitle">Project Title</h2>
+                <p class="text-gray-400 mb-4" id="modalDesc">Project description goes here.</p>
+                <div class="flex flex-wrap gap-2 mb-4" id="modalTags"></div>
+                <div class="text-sm text-gray-400 space-y-2" id="modalDetails">
+                    <p><strong>Dataset:</strong> Kaggle</p>
+                    <p><strong>Problem:</strong> Predict outcomes</p>
+                    <p><strong>Workflow:</strong> EDA → Feature Eng → Model → Eval</p>
+                    <p><strong>Key Features:</strong> Feature engineering, hyperparameter tuning</p>
+                    <p><strong>Learning:</strong> Model evaluation, pipeline building</p>
+                </div>
+                <div class="flex gap-3 mt-4">
+                    <a href="#" class="btn-outline" style="font-size:0.8rem;">🔗 GitHub</a>
+                    <a href="#" class="btn-outline" style="font-size:0.8rem;">▶ Live Demo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ─── JAVASCRIPT ─── -->
+    <script>
+        // ── LOADER ──
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.getElementById('loader').classList.add('hidden');
+                initCounters();
+                initWorkflowSteps();
+                initFilters();
+                initScrollAnimations();
+                initTyping();
+                initNavbar();
+                initScrollTop();
+                initGitHubCalendar();
+                initTheme();
+            }, 1200);
+        });
+
+        // ── TYPING ──
+        function initTyping() {
+            const words = [
+                'AI & Machine Learning Student',
+                'Python Developer',
+                'Data Analyst',
+                'Machine Learning Enthusiast',
+                'Problem Solver',
+                'Future AI Engineer',
+                'Data Science Explorer'
+            ];
+            let wordIndex = 0;
+            let charIndex = 0;
+            let isDeleting = false;
+            const el = document.querySelector('#typing .text-gradient');
+            if (!el) return;
+
+            function type() {
+                const current = words[wordIndex];
+                if (!isDeleting) {
+                    el.textContent = current.substring(0, charIndex + 1);
+                    charIndex++;
+                    if (charIndex === current.length) {
+                        isDeleting = true;
+                        setTimeout(type, 1800);
+                        return;
+                    }
+                    setTimeout(type, 80 + Math.random() * 40);
+                } else {
+                    el.textContent = current.substring(0, charIndex - 1);
+                    charIndex--;
+                    if (charIndex === 0) {
+                        isDeleting = false;
+                        wordIndex = (wordIndex + 1) % words.length;
+                        setTimeout(type, 400);
+                        return;
+                    }
+                    setTimeout(type, 40 + Math.random() * 30);
+                }
+            }
+            type();
+        }
+
+        // ── COUNTERS ──
+        function initCounters() {
+            const counters = document.querySelectorAll('.counter-number');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const el = entry.target;
+                        const target = parseInt(el.dataset.target);
+                        let current = 0;
+                        const increment = Math.ceil(target / 60);
+                        const timer = setInterval(() => {
+                            current += increment;
+                            if (current >= target) {
+                                el.textContent = target;
+                                clearInterval(timer);
+                            } else {
+                                el.textContent = current;
+                            }
+                        }, 25);
+                        observer.unobserve(el);
+                    }
+                });
+            }, { threshold: 0.3 });
+            counters.forEach(c => observer.observe(c));
+        }
+
+        // ── WORKFLOW STEPS ──
+        function initWorkflowSteps() {
+            const steps = document.querySelectorAll('.workflow-step');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry, i) => {
+                    if (entry.isIntersecting) {
+                        setTimeout(() => {
+                            entry.target.classList.add('visible');
+                        }, i * 120);
+                    }
+                });
+            }, { threshold: 0.3 });
+            steps.forEach(s => observer.observe(s));
+        }
+
+        // ── FILTERS ──
+        function initFilters() {
+            const buttons = document.querySelectorAll('.filter-btn');
+            const cards = document.querySelectorAll('.project-card');
+
+            buttons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    buttons.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    const filter = btn.dataset.filter;
+                    cards.forEach(card => {
+                        const cat = card.dataset.category;
+                        if (filter === 'all' || cat === filter) {
+                            card.style.display = 'block';
+                            setTimeout(() => { card.style.opacity = '1';
+                                card.style.transform = 'translateY(0)'; }, 50);
+                        } else {
+                            card.style.opacity = '0';
+                            card.style.transform = 'translateY(20px)';
+                            setTimeout(() => { card.style.display = 'none'; }, 300);
+                        }
+                    });
+                });
+            });
+        }
+
+        // ── SCROLL ANIMATIONS ──
+        function initScrollAnimations() {
+            const els = document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right, .scale-in');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+            els.forEach(el => observer.observe(el));
+
+            // Roadmap items
+            const roadmapItems = document.querySelectorAll('.roadmap-item');
+            const rObserver = new IntersectionObserver((entries) => {
+                entries.forEach((entry, i) => {
+                    if (entry.isIntersecting) {
+                        setTimeout(() => entry.target.classList.add('visible'), i * 60);
+                    }
+                });
+            }, { threshold: 0.2 });
+            roadmapItems.forEach(el => rObserver.observe(el));
+        }
+
+        // ── NAVBAR ──
+        function initNavbar() {
+            const navbar = document.getElementById('navbar');
+            const links = document.querySelectorAll('.nav-link');
+
+            window.addEventListener('scroll', () => {
+                navbar.classList.toggle('scrolled', window.scrollY > 80);
+
+                // Active link
+                const sections = ['home', 'about', 'skills', 'roadmap', 'projects', 'github', 'achievements',
+                    'contact'
+                ];
+                let current = 'home';
+                sections.forEach(id => {
+                    const el = document.getElementById(id);
+                    if (el) {
+                        const rect = el.getBoundingClientRect();
+                        if (rect.top <= 150) current = id;
+                    }
+                });
+                links.forEach(link => {
+                    link.classList.toggle('active', link.getAttribute('href') === '#' + current);
+                });
+            });
+        }
+
+        // ── SCROLL TOP ──
+        function initScrollTop() {
+            const btn = document.getElementById('scrollTop');
+            window.addEventListener('scroll', () => {
+                btn.classList.toggle('visible', window.scrollY > 600);
+            });
+        }
+
+        // ── GITHUB CALENDAR ──
+        function initGitHubCalendar() {
+            const container = document.getElementById('ghCalendar');
+            if (!container) return;
+            const totalDays = 7 * 20;
+            for (let i = 0; i < totalDays; i++) {
+                const day = document.createElement('div');
+                day.className = 'day';
+                const level = Math.floor(Math.random() * 5);
+                day.classList.add('level-' + level);
+                container.appendChild(day);
+            }
+            // Simulate stats
+            document.getElementById('ghRepos').textContent = 12;
+            document.getElementById('ghStars').textContent = 8;
+            document.getElementById('ghStreak').textContent = 14;
+        }
+
+        // ── THEME ──
+        function initTheme() {
+            const isDark = localStorage.getItem('theme') !== 'light';
+            document.documentElement.classList.toggle('dark', isDark);
+            document.body.classList.toggle('light', !isDark);
+        }
+
+        function toggleTheme() {
+            const isDark = document.documentElement.classList.contains('dark');
+            document.documentElement.classList.toggle('dark', !isDark);
+            document.body.classList.toggle('light', isDark);
+            localStorage.setItem('theme', isDark ? 'light' : 'dark');
+        }
+
+        // ── MOBILE MENU ──
+        function toggleMobile() {
+            const menu = document.getElementById('mobileMenu');
+            const btn = document.getElementById('mobileMenuBtn');
+            menu.classList.toggle('open');
+            btn.classList.toggle('open');
+            document.body.style.overflow = menu.classList.contains('open') ? 'hidden' : '';
+        }
+
+        function closeMobile() {
+            const menu = document.getElementById('mobileMenu');
+            const btn = document.getElementById('mobileMenuBtn');
+            menu.classList.remove('open');
+            btn.classList.remove('open');
+            document.body.style.overflow = '';
+        }
+
+        // ── MODAL ──
+        const projectData = {
+            project1: {
+                title: 'House Price Predictor',
+                desc: 'A regression model built with Scikit-learn to predict house prices based on features like area, bedrooms, and location.',
+                tags: ['Scikit-learn', 'Pandas', 'Regression', 'Feature Engineering'],
+                details: {
+                    dataset: 'Kaggle — House Prices',
+                    problem: 'Predict sale price based on housing features',
+                    workflow: 'EDA → Feature Engineering → Model Training → Evaluation',
+                    features: 'Feature selection, hyperparameter tuning, cross-validation',
+                    learning: 'Model evaluation metrics, pipeline building'
+                }
+            },
+            project2: {
+                title: 'COVID-19 Data Analysis',
+                desc: 'Comprehensive exploratory analysis of COVID-19 data with visualizations showing trends, hotspots, and recovery rates.',
+                tags: ['Pandas', 'Matplotlib', 'Seaborn', 'EDA'],
+                details: {
+                    dataset: 'Public COVID-19 data (Johns Hopkins)',
+                    problem: 'Analyze global pandemic trends and patterns',
+                    workflow: 'Data Collection → Cleaning → EDA → Visualization',
+                    features: 'Interactive plots, trend analysis, geospatial mapping',
+                    learning: 'Time series analysis, data storytelling'
+                }
+            },
+            project3: {
+                title: 'Sales Dashboard',
+                desc: 'Interactive Power BI dashboard tracking sales performance, KPIs, and regional trends for retail data.',
+                tags: ['Power BI', 'Excel', 'DAX', 'Dashboard'],
+                details: {
+                    dataset: 'Retail sales dataset',
+                    problem: 'Monitor sales performance and identify growth opportunities',
+                    workflow: 'Data Import → Modeling → DAX Measures → Dashboard Design',
+                    features: 'KPI cards, drill-through, regional filters',
+                    learning: 'Business intelligence, data modeling'
+                }
+            },
+            project4: {
+                title: 'Titanic Survival Predictor',
+                desc: 'Classification model predicting passenger survival on the Titanic using feature engineering and Scikit-learn.',
+                tags: ['Scikit-learn', 'Feature Engineering', 'Classification', 'Kaggle'],
+                details: {
+                    dataset: 'Kaggle — Titanic',
+                    problem: 'Predict survival based on passenger attributes',
+                    workflow: 'Data Cleaning → Feature Engineering → Model Training → Eval',
+                    features: 'Feature encoding, hyperparameter tuning, ensemble methods',
+                    learning: 'Classification metrics, feature importance'
+                }
+            },
+            project5: {
+                title: 'Global Climate Analysis',
+                desc: 'Analysis of global temperature trends, anomaly detection, and climate patterns using historical data.',
+                tags: ['NumPy', 'Pandas', 'Visualization', 'Climate'],
+                details: {
+                    dataset: 'NOAA Global Temperature Data',
+                    problem: 'Identify temperature trends and anomalies',
+                    workflow: 'Data Collection → Processing → Analysis → Visualization',
+                    features: 'Anomaly detection, trend forecasting, interactive plots',
+                    learning: 'Time series, statistical analysis'
+                }
+            },
+            project6: {
+                title: 'Automated ETL Pipeline',
+                desc: 'Python automation pipeline that extracts, transforms, and loads data from multiple sources into a structured format.',
+                tags: ['Python', 'Pandas', 'Automation', 'ETL'],
+                details: {
+                    dataset: 'Multiple data sources (CSV, API, JSON)',
+                    problem: 'Automate data processing and aggregation',
+                    workflow: 'Extract → Transform → Load → Validation',
+                    features: 'Error handling, logging, scheduling',
+                    learning: 'Automation, data engineering principles'
+                }
+            }
+        };
+
+        function openModal(id) {
+            const data = projectData[id];
+            if (!data) return;
+            document.getElementById('modalTitle').textContent = data.title;
+            document.getElementById('modalDesc').textContent = data.desc;
+            const tags = document.getElementById('modalTags');
+            tags.innerHTML = data.tags.map(t => `<span class="skill-pill" style="font-size:0.7rem;">${t}</span>`).join('');
+            const details = document.getElementById('modalDetails');
+            details.innerHTML = `
+                <p><strong>Dataset:</strong> ${data.details.dataset}</p>
+                <p><strong>Problem:</strong> ${data.details.problem}</p>
+                <p><strong>Workflow:</strong> ${data.details.workflow}</p>
+                <p><strong>Key Features:</strong> ${data.details.features}</p>
+                <p><strong>Learning:</strong> ${data.details.learning}</p>
+            `;
+            document.getElementById('projectModal').classList.add('open');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            document.getElementById('projectModal').classList.remove('open');
+            document.body.style.overflow = '';
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeModal();
+        });
+
+        // ── CONTACT FORM ──
+        function handleContact(e) {
+            e.preventDefault();
+            const btn = e.target.querySelector('button[type="submit"]');
+            const original = btn.innerHTML;
+            btn.innerHTML = 'Sending... ⏳';
+            btn.disabled = true;
+            setTimeout(() => {
+                btn.innerHTML = '✓ Sent!';
+                setTimeout(() => {
+                    btn.innerHTML = original;
+                    btn.disabled = false;
+                    e.target.reset();
+                }, 1500);
+            }, 1200);
+        }
+
+        // ── CLOSE MODAL ON OVERLAY CLICK ──
+        document.getElementById('projectModal').addEventListener('click', (e) => {
+            if (e.target === e.currentTarget) closeModal();
+        });
+
+        // ── KEYBOARD NAV ──
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeModal();
+            if (e.key === 'Tab') {
+                document.querySelectorAll('a, button, input, textarea').forEach(el => {
+                    el.setAttribute('tabindex', '0');
+                });
+            }
+        });
+
+        console.log('🧠 Rishu Raj — AI & ML Portfolio');
+        console.log('📊 Built with ❤️, Python, and a lot of curiosity.');
+    </script>
+
+</body>
+</html>
